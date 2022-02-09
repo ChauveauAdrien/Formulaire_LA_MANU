@@ -1,0 +1,71 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+}
+
+/* Header */
+
+
+.header-wrapper {
+    background: #33058D;
+    height: 125px;
+}
+
+.header-nav{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    margin-left: 100px;
+}
+
+
+/* mise en page du menu burger */
+
+.burger {
+    margin-right: 150px;
+    height: 28px;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* 1ère ligne */
+.burger::before {
+    content: "";
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    height: 3px;
+    width: 100%;
+    display: block;
+    margin-bottom: 9px;
+}
+
+/* ligne du milieu */
+.mid-line {
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    align-self: flex-end;
+    height: 3px;
+    width: 70%;
+}
+
+/* 2ème ligne */
+.burger::after {
+    content: "";
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    height: 3px;
+    width: 100%;
+    display: block;
+    margin-top: 9px;
+}
