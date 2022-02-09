@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Manu Formulaire</title>
+    <!-- lien css -->
     <link rel="stylesheet" href="./assets/css/style.css?version=<?= time(); ?>">
 </head>
 <body>
@@ -18,6 +19,19 @@
             </nav>
         </div>
     </header>
+    <section class="banner-wrapper">
+        <div class="empty"></div>
+        <div class="banner">
+            <div class="banner-left">fiche de <br> renseignement</div>
+            <div class="banner-right">
+                <img src="./assets/img/IllusForm.png" alt="illustration bannière formulaire">
+            </div>
+        </div>
+        
+    </section>
+    <main>
+        <section></section>
+    </main>
 </body>
 </html>
 
