@@ -12,6 +12,7 @@
 
 body {
     font-size: 20px;
+    font-family: 'Roboto';
 }
 
 /* Header */
@@ -98,17 +99,100 @@ body {
 }
 .banner-left {
     color: white;
-    font-family: 'Roboto';
-    font-size: 3em;
+    font-size: 2em;
     font-weight: bold;
     margin-left: 100px;
     text-transform: uppercase;
     
 }
 .banner-right img{
-    height: 55vh;
+    height: auto;
     margin-right: 150px;
-    width: auto;
+    width: 40vw;
 }
 
 /* fin de la bannière */
+
+/* main */
+
+main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h2 {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.75em;
+    font-weight: lighter;
+    letter-spacing: 8px;
+}
+
+h2::after {
+    content: "";
+    width: 25%;
+    height: 3px;
+    margin: auto;
+    background: #33058D;
+    border-radius: 15px;
+    display: block;
+}
+
+/* info-perso */
+
+.info-perso-wrapper {
+    display: flex;
+    width: 100%;
+    margin-top: 75px;
+}
+
+/* info perso titre  */
+.info-perso-intro {
+    width: 55%;
+    height: 360px;
+    background: #33058D;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-perso-title {
+    color: white;
+    font-size: 1.75em;
+    font-weight: bold;
+    letter-spacing: 12px;
+    line-height: 50px;
+    display: flex;
+    flex-direction: column;
+    margin: 100px 0px 0px 100px;
+}
+.info-perso-title  span{
+    margin-left: 70px;
+}
+
+.info-perso-img {
+    align-self: flex-end;
+    margin-right: 135px;
+    margin-bottom: 20px;
+}
+
+
+/* info perso formulaire */
+
+.info-perso-form {
+    width: 25%;
+    margin: auto;
+}
+
+.info-perso-form input{
+    width: 100%;
+    height: 37.5px;
+    border: none;
+    border-bottom: 2px solid #33058D;
+    margin-top: 20px;
+}
+.info-perso-form input::placeholder{
+    font-size: 1.3em;
+}
+
