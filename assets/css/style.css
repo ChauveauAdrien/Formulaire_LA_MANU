@@ -2,6 +2,8 @@
 /* bleu : #33058D */
 /* rose : #E10098 */
 
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 /* initialisation */
 *, ::before, ::after {
@@ -24,6 +26,12 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    transition: all 0.25s ease-in-out;
+}
+.header-wrapper.scroll {
+    background: rgba(51, 5, 141, 0.4);
+    height: 115px;
+    padding: 0px 0px 10px;
 }
 
 .header-nav{
@@ -49,6 +57,7 @@ body {
     justify-content: center;
 }
 
+
 /* 1ère ligne */
 .burger::before {
     content: "";
@@ -59,6 +68,7 @@ body {
     display: block;
     margin-bottom: 9px;
 }
+
 
 /* ligne du milieu */
 .mid-line {
@@ -122,11 +132,11 @@ main {
 }
 
 h2 {
-    margin-top: 20px;
+    margin-top: 45px;
     width: 100%;
     text-align: center;
     font-size: 1.75em;
-    font-weight: lighter;
+    font-weight: 300;
     letter-spacing: 8px;
 }
 
@@ -137,7 +147,49 @@ h2::after {
     margin: auto;
     background: #33058D;
     border-radius: 15px;
+    margin-top: 12px;
     display: block;
+}
+
+form {
+    width: 100%;
+}
+/* progress bar */
+
+.progressbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    right: -61.5%;
+    margin-top: 127px;
+}
+.progressbar::before, .progress {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 3px;
+    width: 100%;
+    background: #33058D;
+    z-index: -1;
+}
+.progress {
+    background: #E10098;
+    width: 0%;
+}
+.progress-step {
+    width: 21px;
+    height: 21px;
+    background: grey;
+    border-radius: 50%;
+    border: solid 5px #33058D;
+}
+.progress-step-active {
+    background: #E10098;
+}
+.progress-step-check {
+    background: green;
 }
 
 /* info-perso */
@@ -145,7 +197,7 @@ h2::after {
 .info-perso-wrapper {
     display: flex;
     width: 100%;
-    margin-top: 75px;
+    margin-top: 103px;
 }
 
 /* info perso titre  */
@@ -161,7 +213,7 @@ h2::after {
     color: white;
     font-size: 1.75em;
     font-weight: bold;
-    letter-spacing: 12px;
+    letter-spacing: 7px;
     line-height: 50px;
     display: flex;
     flex-direction: column;
@@ -185,6 +237,10 @@ h2::after {
     margin: auto;
 }
 
+.info-perso-form .formulaire {
+    display: flex;
+    flex-direction: column;
+}
 .info-perso-form input{
     width: 100%;
     height: 37.5px;
@@ -195,4 +251,218 @@ h2::after {
 .info-perso-form input::placeholder{
     font-size: 1.3em;
 }
+.info-perso-form input::focus-visible{
+    outline-offset: 0px;
+}
 
+/* 2ème section */
+
+/* formulaire */
+
+.scolaire-wrapper {
+    width: 100%;
+    display: flex;
+    margin-top: 100px;
+}
+
+.scolaire-form-wrapper {
+    width: 35%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.scolaire h3,
+.scolaire h4{
+    font-size: 1.75em;
+    font-weight: 400;
+    text-align: center;
+    
+}
+
+h4 {
+    margin-top: 50px;
+}
+
+.scolaire-form {
+    margin: 20px 0px 0px 100px
+}
+
+
+
+
+.scolaire-intro {
+    width: 55%;
+    background: #33058D;
+    height: 360px;
+    display: flex;
+}
+
+.scolaire-img {
+    align-self: flex-end;
+}
+.scolaire-img img{
+    display: block;
+    
+}
+
+.scolaire-title {
+    margin-top: 100px;
+    color: white;
+    font-size: 1.75em;
+    font-weight: bold;
+    letter-spacing: 7px;
+    line-height: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.scolaire-title span {
+    margin-left: 40px;
+}
+
+
+/* personnes à prévenir en cas d'urgences */
+
+
+.urgences-wrapper {
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+/* info perso titre  */
+.urgences-intro {
+    width: 55%;
+    height: 360px;
+    background: #33058D;
+    display: flex;
+    justify-content: space-between;
+}
+
+.urgences-title {
+    color: white;
+    font-size: 1.75em;
+    font-weight: bold;
+    letter-spacing: 7px;
+    line-height: 50px;
+    display: flex;
+    flex-direction: column;
+    margin: 170px 0px 0px 100px;
+}
+.urgences-title  span{
+    margin-left: 150px;
+}
+
+.urgences-img {
+    align-self: flex-end;
+    margin-right: 52px;
+    margin-bottom: 82px;
+}
+
+.urgences-form {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+.blank{
+    width: 10%;
+}
+.num {
+    height: 74px;
+    width: 74px;
+    background: #E10098;
+    transform: rotate(45deg);
+    font-size: 61px;
+    color: white;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.num p {
+    align-self: flex-end;
+    margin-right: 5px;
+}
+
+.btns-urgences {
+    display: flex;
+    justify-content: space-around;
+}
+.urgences-form .formulaire {
+    width: 56%;
+    margin-right: 150px;
+}
+.urgences-form input {
+    width: 100%;
+    height: 37.5px;
+    border: none;
+    border-bottom: 2px solid #33058D;
+    margin-top: 20px;
+}
+
+.urgences-form input::placeholder {
+    font-size: 1.3em;
+}
+
+.footer-wrapper {
+    margin-top: 50px;
+    background: #33058D;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+.btn {
+    display: block;
+    padding: 16.5px;
+    width: 180px;
+    background: #33058D;
+    color: white;
+    transition: 0.3s ;
+    border-radius: 5px;
+    border: none;
+    font-size: 22px;
+    margin-top: 88px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+.btn:hover {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px #33058D;
+}
+.btns {
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.next {
+    align-self: flex-end;
+}
+
+.step {
+    display: none;
+    transform-origin: top;
+    animation: animate 0.5s;
+}
+
+@keyframes animate {
+    from {
+      transform: scale(1, 0);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1, 1);
+      opacity: 1;
+    }
+  }
+
+.step-active {
+    display: flex;
+}
