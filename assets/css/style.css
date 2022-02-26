@@ -160,8 +160,8 @@ form {
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 600px;
-    right: -61.5%;
+    width: 300px;
+    right: -70%;
     margin-top: 127px;
 }
 .progressbar::before, .progress {
@@ -466,3 +466,124 @@ h4 {
 .step-active {
     display: flex;
 }
+
+
+/* media queries */
+
+@media (max-width: 1650px) {
+
+    .progressbar {
+        right: -68%;
+        
+    }
+    .scolaire-img img{
+        display: block;
+        width: 400px;
+        height: auto;
+    }
+
+
+
+
+ }
+@media (max-width: 1375px) {
+
+    .banner-wrapper {
+        height: 80vh;
+    }
+
+    .progressbar {
+        right: -66%;
+        
+    }
+    .urgences-img {
+        display: none;
+    }
+    .num {
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+
+
+
+
+
+ }
+@media (max-width: 1255px) {
+
+    .banner-wrapper {
+        height: 75vh;
+    }
+    .info-perso-title {
+        font-size: 1.50em;
+        margin: 50px 0px 0px 50px;
+    }
+    .scolaire-img img{
+        display: none;
+    }
+    .scolaire-intro {
+        height: 200px;
+        padding-left: 50px;
+    }
+    .scolaire-title {
+        margin-top: 50px;
+    }
+
+ }
+@media (max-width: 1200px) {
+
+    .banner-wrapper {
+        height: 70vh;
+    }
+    .banner-right img{
+        margin-right: 95px;
+    }
+    .info-perso-intro {
+        width: 55%;
+        height: 200px;
+        background: #33058D;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .info-perso-img {
+        display: none;
+    }
+
+
+
+ }
+@media (max-width: 1150px) {
+
+    .banner-left {
+        color: white;
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-left: 100px;
+        text-transform: uppercase;
+    }
+    .banner-right img{
+        margin-right: 70px;
+    }
+    .banner-wrapper {
+        height: 50vh;
+    }
+    .progressbar {
+        right: -64%;
+        
+    }
+
+
+ }
+@media (max-width: 1000px) {
+
+    .banner-wrapper {
+        height: 50vh;
+    }
+    .progressbar {
+        right: -62%;
+        
+    }
+
+
+ }

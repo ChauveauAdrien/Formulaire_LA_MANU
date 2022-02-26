@@ -47,8 +47,6 @@
                 <div class="progress-step progress-step-active"></div>
                 <div class="progress-step"></div>
                 <div class="progress-step"></div>
-                <div class="progress-step"></div>
-                <div class="progress-step"></div>
             </div>
             <!----------------------------------------------------- STEP ---------------------------------------------------------------->
 
@@ -107,15 +105,15 @@
                             </div>
                             <h4>Diplôme obtenue</h4>
                             <div class="checkbox">
-                                <input type="checkbox" id="bac" name="diplome">
+                                <input type="checkbox" id="bac" name="bac">
                                 <label for="bac">Baccalauréat général, technologique, professionnel</label>
                             </div>
                             <div class="checkbox">
-                                <input type="checkbox" id="bac3" name="diplome">
+                                <input type="checkbox" id="bac3" name="bac3">
                                 <label for="bac3">DEUG,DUT,BTS, ou autre diplôme de niveau BAC+3</label>
                             </div>
                             <div class="checkbox">
-                                <input type="checkbox" id="bac3plus" name="diplome">
+                                <input type="checkbox" id="bac3plus" name="bac3plus">
                                 <label for="bac3plus">Diplôme de niveau BAC+3 ou plus</label>
                             </div>
                             <div class="btns">
