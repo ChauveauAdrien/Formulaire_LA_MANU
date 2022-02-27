@@ -47,6 +47,7 @@
                 <div class="progress-step progress-step-active"></div>
                 <div class="progress-step"></div>
                 <div class="progress-step"></div>
+                <div class="progress-step"></div>
             </div>
             <!----------------------------------------------------- STEP ---------------------------------------------------------------->
 
@@ -172,10 +173,29 @@
                         <input type="text" placeholder="Adresse" id="city-3" name="city-3">
                         <div class="btns">
                             <div href="#" class="btn prev">Précédent</div>
-                            <button type="submit" value="submit" class="btn send">Envoyer</button>
+                            <div href="#" class="btn next">Suivant</div>
+                            
                         </div>
                     </div>
                 </div> 
+            </section>
+            <section class="step texte-wrapper">
+                <div class="texte-intro">
+                    <div class="texte-title">Quelque chose <span>à ajouter ?</span></div>
+                    <div class="texte-img"></div>
+                </div>
+                <div class="texte-form-wrapper">
+                    <div class="formulaire-texte">
+                        <label for="moreInfo"> Plus d'Informations ?</label>
+                        <textarea name="moreInfo" id="moreInfo" cols="30" rows="10"></textarea>
+                        <div class="btns">
+                            <div href="#" class="btn prev">Précédent</div>
+                            <div href="#" class="btn next">Suivant</div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
             </section>
         </form>    
     </main>

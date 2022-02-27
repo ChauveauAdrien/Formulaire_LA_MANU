@@ -161,7 +161,7 @@ form {
     display: flex;
     justify-content: space-between;
     width: 300px;
-    right: -70%;
+    right: -69%;
     margin-top: 127px;
 }
 .progressbar::before, .progress {
@@ -406,6 +406,39 @@ h4 {
     font-size: 1.3em;
 }
 
+/* plus d'inforamtions */
+
+.texte-wrapper {
+    display: flex;
+    margin-top: 100px;
+}
+.texte-intro{
+    width: 55%;
+    height: 360px;
+    background: #33058D;
+}
+.texte-title {
+    color: white;
+    font-size: 1.75em;
+    font-weight: bold;
+    letter-spacing: 7px;
+    line-height: 50px;
+    display: flex;
+    flex-direction: column;
+    margin: 60px 0px 0px 100px;
+}
+.texte-title span{
+    margin-left: 150px;
+}
+.texte-form-wrapper {
+    width: 45%;
+}
+.formulaire-texte {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
 .footer-wrapper {
     margin-top: 50px;
     background: #33058D;
@@ -473,7 +506,7 @@ h4 {
 @media (max-width: 1650px) {
 
     .progressbar {
-        right: -68%;
+        right: -67%;
         
     }
     .scolaire-img img{
@@ -493,7 +526,7 @@ h4 {
     }
 
     .progressbar {
-        right: -66%;
+        right: -65%;
         
     }
     .urgences-img {
@@ -569,7 +602,7 @@ h4 {
         height: 50vh;
     }
     .progressbar {
-        right: -64%;
+        right: -63%;
         
     }
 
@@ -581,7 +614,7 @@ h4 {
         height: 50vh;
     }
     .progressbar {
-        right: -62%;
+        right: -61%;
         
     }
 
